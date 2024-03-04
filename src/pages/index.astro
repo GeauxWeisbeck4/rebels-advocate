@@ -5,11 +5,11 @@ import { getCollection, getEntryBySlug } from 'astro:content'
 import DefaultPageLayout from '$/layouts/default.astro'
 import PostPreviewList from '$/components/PostPreviewList.astro'
 import Prose from '$/components/Prose.astro'
-import { Content as AboutAstroInk } from './_astro-ink.md'
+import { Content as AboutRebelsAdvocate } from './_rebels-advocate.md'
 
 
-const title = 'Home'
-const description = 'Astro-Ink is a crisp, minimal, personal blog theme for Astro'
+const title = 'Rebels Advocate'
+const description = 'Because nothing is as it ever seems and you should never believe it till you actually see it.'
 
 const posts = await getCollection('blog')
 ---
@@ -22,7 +22,7 @@ const posts = await getCollection('blog')
         </div>
         <div class="hero__says">
             <Prose>
-                <AboutAstroInk/>
+                <AboutRebelsAdvocate/>
             </Prose>
         </div>
     </div>
